@@ -1,0 +1,96 @@
+.lds_ring {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000000000;
+
+    .keyframes(lds-ring;
+
+        {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    );
+
+    div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 51px;
+        height: 51px;
+        margin: 6px;
+        border: 6px solid red;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: red transparent transparent transparent;
+
+        &:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+    }
+}
+
+.lds_ring2 {
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000000000;
+    background: #ffffff94;
+}
+
+
+.keyframes(@name;
+
+@arguments) {
+    @-moz-keyframes @name {
+        @arguments();
+    }
+
+    @-webkit-keyframes @name {
+        @arguments();
+    }
+
+    @-ms-keyframes @name {
+        @arguments();
+    }
+
+    @-o-keyframes @name {
+        @arguments();
+    }
+
+    @keyframes @name {
+        @arguments();
+    }
+}
+
+.animation(@arguments) {
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    -ms-animation: @arguments;
+    -o-animation: @arguments;
+    animation: @arguments;
+}
