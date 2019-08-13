@@ -5,33 +5,33 @@ import Loader from 'react-loader';
 import { IntlProvider } from 'react-intl';
 import PropTypes from 'prop-types';
 import NoMatch from './components/pages/NoMatch';
-import Confirmation from './components/Pages/Confirmation';
+import Confirmation from './components/pages/Confirmation';
 import Layout from './components/pages/Layout/Layout';
 import NavigationBar from './components/navigation/NavigationBar/NavigationBar';
 
 // -----left menu------
-import Home from './components/Pages/SidebarMenu/Home';
-import HomeUser from './components/Pages/SidebarMenu/HomeUser';
-import EntryRules from './components/Pages/SidebarMenu/EntryRules';
-import EntryForm from './components/Pages/SidebarMenu/EntryForm';
-import Payment from './components/Pages/SidebarMenu/Payment';
-import Status from './components/Pages/SidebarMenu/Status';
-import Results from './components/Pages/SidebarMenu/Results';
-import Contacts from './components/Pages/SidebarMenu/Contacts';
-import CharactersPage from './components/Pages/SidebarMenu/CharactersPage';
-import NewCharacterPage from './components/Pages/SidebarMenu/NewCharacterPage';
+import Home from './components/pages/SidebarMenu/Home';
+import HomeUser from './components/pages/SidebarMenu/HomeUser';
+import EntryRules from './components/pages/SidebarMenu/EntryRules';
+import EntryForm from './components/pages/SidebarMenu/EntryForm';
+import Payment from './components/pages/SidebarMenu/Payment';
+import Status from './components/pages/SidebarMenu/Status';
+import Results from './components/pages/SidebarMenu/Results';
+import Contacts from './components/pages/SidebarMenu/Contacts';
+import CharactersPage from './components/pages/SidebarMenu/CharactersPage';
+import NewCharacterPage from './components/pages/SidebarMenu/NewCharacterPage';
 
 // -----right menu------
-import SignIn from './components/Pages/NavbarMenu/SignIn';
-import ForgotPassword from './components/Pages/NavbarMenu/ForgotPassword';
-import ResetPassword from './components/Pages/NavbarMenu/ResetPassword';
-import Password from './components/Pages/NavbarMenu/Password';
-import SignUp from './components/Pages/NavbarMenu/SignUp';
+import SignIn from './components/pages/NavbarMenu/SignIn';
+import ForgotPassword from './components/pages/NavbarMenu/ForgotPassword';
+import ResetPassword from './components/pages/NavbarMenu/ResetPassword';
+import Password from './components/pages/NavbarMenu/Password';
+import SignUp from './components/pages/NavbarMenu/SignUp';
 
 import UserRoute from './components/routes/UserRoute';
 import GuestRoute from './components/routes/GuestRoute';
 
-import NewBookPage from './components/Pages/NewBookPage';
+import NewBookPage from './components/pages/NewBookPage';
 
 import messages from './localization/messages';
 import { fetchCurrentUserRequest } from './actions/users';
