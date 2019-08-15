@@ -17,6 +17,7 @@
     "glamorous": "^5.0.0",
     "intl-messageformat-parser": "^3.0.4",
     "normalizr": "^3.4.1",
+    "nodemon": "^1.19.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-animations": "^1.0.0",
