@@ -11,6 +11,7 @@
     "babel-eslint": "^10.0.1",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.1",
     "express": "^4.17.1",
     "glamor": "^2.20.40",
     "glamorous": "^5.0.0",
@@ -36,7 +37,8 @@
   "scripts": {
     "test": "react-scripts test",
     "format": "prettier --write \"src/**/*.js\"",
-    "start": "node server.js",
+    "release": "node server.js",
+    "start": "concurrently \"PORT=8080 node server.js\" \"cd server && PORT=3000 npm start\"",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "heroku-postbuild": "webpack -p",
