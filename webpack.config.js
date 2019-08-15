@@ -12,7 +12,7 @@ module.exports = {
   devServer: {
     contentBase: './build',
     proxy: {
-      '/api': 'http://localhost:3000',
+      '/api': 'https://grand-photo-salon-api.herokuapp.com',
     },
     historyApiFallback: {
       disableDotRule: true,

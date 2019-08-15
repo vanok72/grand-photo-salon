@@ -53,11 +53,12 @@
     "reselect": "^4.0.0",
     "validator": "^11.0.0"
   },
+  "proxy": "https://grand-photo-salon-api.herokuapp.com",
   "scripts": {
     "test": "react-scripts test",
     "format": "prettier --write \"src/**/*.js\"",
-    "release": "node server.js",
-    "start": "concurrently \"PORT=8080 node server.js\" \"cd server && PORT=3000 npm start\"",
+    "start": "node server.js",
+    "startt": "concurrently \"PORT=8080 node server.js\" \"cd server && PORT=3000 npm start\"",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "heroku-postbuild": "webpack -p",
