@@ -19,6 +19,7 @@ mongoose.Promise = Promise;
 mongoose.set('useFindAndModify', false);
 mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true });
 
+app.use(express.static(path.join(__dirname, '../client/build')))
 app.use('/api/auth', auth);
 app.use('/api/users', users);
 app.use('/api/books', books);
@@ -38,9 +39,9 @@ app.get('/*', (req, res) => {
         console.log(`User not found`);
       }
     });
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
-app.listen(process.env.PORT, () =>
+app.listen(process.env.PORT || 3000, () =>
   console.log(`Our app is running on port ${process.env.PORT}`),
 );
