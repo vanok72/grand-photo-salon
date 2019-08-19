@@ -1,6 +1,6 @@
 import seeder from 'mongoose-seed';
 import dotenv from 'dotenv';
-import data from './data.json.js';
+import data from './data.json.js.js';
 
 dotenv.config();
 
